@@ -24,7 +24,7 @@ namespace TkuOisAzFunc116148
             
             message = new SendGridMessage();
             message.From = new EmailAddress(Environment.GetEnvironmentVariable("EmailSender"));
-            message.Subject = $"{employee.RowKey} + 's personal information";
+            message.Subject = $"{employee.RowKey} + 's personal information(dev)";
             message.HtmlContent = $"employee.RowKey={employee.RowKey}, employee.EmpName={employee.EmpName}, employee.EmpEmail={employee.EmpEmail}";
             message.AddTo("120096@o365.tku.edu.tw");
             
