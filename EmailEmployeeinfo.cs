@@ -26,7 +26,7 @@ namespace TkuOisAzFunc116148
             message.From = new EmailAddress(Environment.GetEnvironmentVariable("EmailSender"));
             message.Subject = $"{employee.RowKey} + 's personal information";
             message.HtmlContent = $"employee.RowKey={employee.RowKey}, employee.EmpName={employee.EmpName}, employee.EmpEmail={employee.EmpEmail}";
-            message.AddTo("120096@o365.tku.edu.tw");
+            message.AddTo("116148@o365.tku.edu.tw");
             
             log.LogInformation("Finished.");
         }
